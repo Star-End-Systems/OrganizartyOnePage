@@ -1,0 +1,32 @@
+#Events{
+    width: 100vh;
+    height: 100vw;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.imgEvents{
+    position: fixed;
+    width: 35vw;
+    z-index:1;
+    /* border: black solid; */
+    align-self: flex-end;
+}
+
+.wrapper{
+    display: flex;
+    width:500vw;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-100vh);
+
+}
+
+.inversaoImg{
+    z-index: 0;
+}
+
+.inversaoTexto{
+    z-index: 1;
+}
