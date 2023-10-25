@@ -2,6 +2,7 @@
     display: flex;
 
     height: 100vh;
+    margin-top: -95vh;
 
     background-color: #FFFFFF;
     background-image: url(../img/services/background.png);
@@ -27,8 +28,8 @@
 }
 
 .servicesTitle h3{
-    /* Here goes the Konnect font */
-    margin-top: 8vh;
+    font-family: KonnectBold;
+    margin-top: 12vh;
 
     background: linear-gradient(180deg, #7D3098 0%, #EF5781 50%, #FBD54A 100%);
     -webkit-background-clip: text;
@@ -41,7 +42,7 @@
 }
 
 .servicesTitle h1{
-    margin-top: 4vh;
+    font-family: KonnectBold;
     margin-bottom: 4vh;
 
     font-size: 3vw;
@@ -87,7 +88,7 @@
 }
 
 .servicesCol p{
-    /* Here goes the Konnect font */
+    font-family: Konnect;
     margin-top: 15%;
 
     font-size: 1.0vw;
@@ -117,7 +118,7 @@
 }
 
 .servicesRowTitle h3{
-    /* Here goes the Konnect font */
+    font-family: KonnectBold;
     margin-left: 15%;
     
     font-weight: bolder;

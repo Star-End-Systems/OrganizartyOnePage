@@ -7,11 +7,16 @@ const navBarChangeColor = () => {
     item.forEach((element) => {
         console.log(windowTop);
         if (windowTop >= 700) {
-            
             console.log("altura do scroll: " + element.offsetTop);
             element.classList.add("animate");
+            element.classList.remove("animate2");
         } else {
             element.classList.remove("animate");
+            element.classList.remove("animate2");
+        }
+        if (windowTop >= 3000) {
+            console.log("altura do scroll: " + element.offsetTop);
+            element.classList.add("animate2");
         }
     })
 };
@@ -28,8 +33,9 @@ let cont = document.querySelector('#Events');
 let texto = document.querySelectorAll('.txtEvents');
 let baloes = document.querySelector("#baloes");
 let weddingBalls = document.querySelector("#weddingBalls");
+let happyBalls = document.querySelector("#happyBalls");
 let bolas = document.querySelector("#bolas");
-let img = document.querySelectorAll(".imgEvents")
+let img = document.querySelectorAll(".imgEvents");
 let stars = document.querySelector("#estrela");
 
 function AnimacaoTela1(){
@@ -82,6 +88,8 @@ function AnimacaoTela1(){
             }
 
             stars.style.height = X/26 + "vh";
+            texto[2].classList.remove("inversaoTexto");
+            img[2].classList.remove("inversaoImg");
             
         /* Debutante */
         } else if(cont.scrollTop < ndResposivo[2]){
@@ -90,21 +98,24 @@ function AnimacaoTela1(){
 
             texto[2].style.right = X/8 + 'vh';
 
-            texto[2].classList.add("inversaoTexto");
-            img[2].classList.add("inversaoImg");
-
-            if(X <= ndResposivo[1]){
-                texto[2].classList.remove("inversaoTexto");
-                img[2].classList.remove("inversaoImg");
+            if(cont.scrollTop > ndResposivo[1]){
+                happyBalls.style.opacity = X/12 + "%"; 
+                texto[2].classList.add("inversaoTexto");
+                img[2].classList.add("inversaoImg");
             }
+
+            texto[3].classList.remove("inversaoTexto");
+            img[3].classList.remove("inversaoImg");
 
         /* Hora Feliz */
         } else if(cont.scrollTop < ndResposivo[3]){
             X = cont.scrollTop - ndResposivo[2];
-            texto[3].style.right = X/2 + 'px';
-            if(X <= ndResposivo[2]){
-                texto[2].classList.remove("inversaoTexto");
-                img[2].classList.remove("inversaoImg");
+            texto[3].style.right = X/13 + 'vh';
+
+            if(cont.scrollTop > ndResposivo[2]){
+                happyBalls.style.opacity = 100 - X/16 + "%"; 
+                texto[3].classList.add("inversaoTexto");
+                img[3].classList.add("inversaoImg");
             }
         }
     }

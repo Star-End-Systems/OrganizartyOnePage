@@ -57,6 +57,8 @@ footer{
 
 #footerRow{
     display: flex;
+
+    line-height: 3vh;
 }
 
 #footerCol1{
@@ -86,7 +88,6 @@ footer{
     display: flex;
     flex-direction: column;
 
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -108,7 +109,7 @@ footer{
 
 .footer{
     margin-top: 3%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -126,7 +127,7 @@ footer{
 }
 
 footer h4{
-    font-family: 'Konnect', sans-serif;
+    font-family: KonnectBold;
     color: #7E7979;
     
     font-weight: bold;

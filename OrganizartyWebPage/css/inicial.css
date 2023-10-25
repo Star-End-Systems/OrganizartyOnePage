@@ -45,15 +45,19 @@ section{
     display:flex;
     justify-content: center;
     position: fixed;
-    margin-top: 5vh;
+    margin-top: 4vh;
     z-index: 6;
 }   
 
 .itens{
-    padding: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-decoration: none;
     color: var(--cinza);
 
+    border-radius: 70px;
 }
 
 .itens #home{
@@ -61,10 +65,9 @@ section{
 }
 
 .itens:hover{
-    color: var(--rosa);
-    transition: all 0.4s;  
-    border-radius: 30px;
-    border: solid white 1px;
+    transition: all 0.8s;  
+    border: solid var(--cinza2) 1px;
+
 }
 
 [data-changeColor]{
@@ -81,6 +84,17 @@ section{
 
 [data-changeColor].animate:hover{
     color: var(--rosa);
+    border: solid var(--rosa) 1px;
+    background-color: #FFF;
+}
+
+[data-changeColor].animate2{
+    color: var(--cinza);
+}
+
+[data-changeColor].animate2:hover{
+    color: var(--cinza);
+    border: solid var(--cinza) 1px;
     background-color: #FFF;
 }
 
@@ -90,7 +104,7 @@ section{
  }
 
 .mascote{
-    width:42vw; 
+    width: 50vw; 
     margin-left: 8vw;
     display: flex;
     align-items: flex-end;

@@ -1,4 +1,4 @@
-.debutante{
+#debutante{
     width: 100vw;
     height:100vh;
     overflow-y: hidden;
@@ -6,7 +6,7 @@
 
 }
 
-.debutante h1{
+#debutante h1{
     position: relative;
     font-family: KonnectBold;
     color: var(--branco);

@@ -1,11 +1,11 @@
-.boyOrGirl{
+#boyOrGirl{
     width: 100vw;
     height:100vh;
     background-color: var(--lilas);
     background-size: cover;
 }
 
-.boyOrGirl h1{
+#boyOrGirl h1{
     position: relative;
     font-family: KonnectBold;
     color: var(--branco);

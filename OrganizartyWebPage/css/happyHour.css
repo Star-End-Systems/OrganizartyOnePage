@@ -1,17 +1,24 @@
-.happyHour{
+#happyHour{
     width: 100vw;
     height:100vh;
     overflow-y: hidden;
-    background-image: url(../img/HoraFeliz/Happy\ hour.png);
+    background-image: url(../img/HoraFeliz/Background.png);
     background-size: cover;
 }
 
-.happyHour h1{
+#happyHour h1{
     position: relative;
     font-family: KonnectBold;
     color: var(--branco);
     font-size: 9vw;
-    z-index:0;
+    z-index: 0;
+}
+
+#happyBalls{
+    position: absolute;
+    align-self: center;
+
+    height: 70vh;
 }
 
 .botao4{

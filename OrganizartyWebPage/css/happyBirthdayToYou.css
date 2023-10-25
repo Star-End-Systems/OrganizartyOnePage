@@ -1,11 +1,11 @@
-.aniversario{
+#aniversario{
     width: 100vw;
     height:100vh;
-    background-image: url(../img/HappyBirthday/Happy\ Birthday\ to\ you.png);
+    background-image: url(../img/HappyBirthday/Background.png);
     background-size: cover;
 }
 
-.aniversario h1{
+#aniversario h1{
     position: relative;
     font-family: KonnectBold;
     color: var(--branco);
@@ -13,10 +13,21 @@
     margin-bottom: 6vh;
     z-index:0;
 }
+
+#birthBallons{
+    position: absolute;
+    align-self: center;
+
+    top: 30vh;
+
+    height: 70vh;
+}
+
 .bday{
     text-align: center;
 }
- .bday strong{
+
+.bday strong{
     visibility: hidden;
  }
 
