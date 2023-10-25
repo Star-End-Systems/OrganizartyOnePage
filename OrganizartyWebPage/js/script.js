@@ -26,8 +26,10 @@ navBarChangeColor();
 window.addEventListener("scroll", () => {
     navBarChangeColor();
 })
-
-const ndResposivo = [1900, 3800, 5700, 7516];
+/*
+const ndResponsivo = [1900, 3800, 5700, 7516]
+*/
+const ndResposivo = [1900, 3900, 5800, 7616];
 
 let cont = document.querySelector('#Events');
 let texto = document.querySelectorAll('.txtEvents');
@@ -62,8 +64,7 @@ function AnimacaoTela1(){
             weddingBalls.style.opacity = 100 + "%";
             weddingBalls.style.height = 0 + X/26 + "vh";
 
-            petalas.style.height = X/28 + "vh";
-            petalas.style.top = X/16 + "px";
+            petalas.style.top = X/4 + "px";
 
             texto[1].classList.remove("inversaoTexto");
             img[1].classList.remove("inversaoImg");
@@ -74,8 +75,7 @@ function AnimacaoTela1(){
             X = cont.scrollTop - ndResposivo[0];
             texto[1].style.right = X/8 + 'vh';
 
-            petalas.style.height = ndResposivo[0]/28 + X/64 + "vh";
-            petalas.style.top = ndResposivo[0]/16 + X/10 + "px";
+            petalas.style.top = ndResposivo[0]/4 + X/3 + "px";
 
             weddingBalls.style.height = ndResposivo[0]/26 + X/16 + "vh";
 

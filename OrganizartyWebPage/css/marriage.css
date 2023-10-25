@@ -5,6 +5,8 @@
     overflow-x: hidden;
     background-color: var(--marromFundo);
     background-size: cover;
+
+    z-index: -2;
 }
 
 #marriage h1{
@@ -37,9 +39,10 @@
 
 #petalas{
     position: absolute;
-    align-self: top;
+    align-self: center;
+    margin-top: -50vh;
 
-    z-index: 0;
+    z-index: -1;
     
     height: 80vh;
 }
